@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import numpy as np
+X=[1,2,3]
+Y=[1.2,1.9,3.2]
+def likelihood(x):
+    y=2.21*x - 2.32
+    return y
+    y_points=[]
+for i in range(len(X)):
+  y_points.append(-2.32+2.21*X[i])
+plt.scatter(X,Y,c='blue')
+plt.plot(X,y_points,c='green')
